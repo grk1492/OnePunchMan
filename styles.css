@@ -1,0 +1,76 @@
+@-webkit-keyframes oscillation
+{
+	from
+	{
+		-webkit-transform:rotate(-9deg);
+	}
+	to{
+		-webkit-transform:rotate(9deg);
+	}
+}
+ 
+@-moz-keyframes oscillation
+{
+	from{
+		-moz-transform:rotate(-9deg);
+	}
+	to{
+		-moz-transform:rotate(9deg);
+	}
+}
+
+
+
+
+#bag {
+	width:200px;
+	height:500px;
+	margin:0 auto;
+	margin-top:130px;
+	background:url(bag.png)center no-repeat;
+	background-size:80%;
+
+	-webkit-transform-origin:50% -40px;  
+	-moz-transform-origin:50% -40px;   
+	-webkit-animation: oscillation 1s ease-in-out infinite alternate;
+	-moz-animation: oscillation 1s ease-in-out infinite alternate;
+
+}
+
+
+#bag.burst {
+	background:url(bag-burst.png)center no-repeat;
+	background-size:80%;
+
+	-webkit-transform-origin:50% -40px;  
+	-moz-transform-origin:50% -40px;   
+	-webkit-animation: oscillation 1s ease-in-out infinite alternate;
+	-moz-animation: oscillation 1s ease-in-out infinite alternate;
+
+}
+
+
+
+#bag-health {
+	width:200px;
+	border:5px solid #000;
+	margin:0 auto 20px auto;
+}
+
+#bag-health div {
+	height:30px;
+	background:crimson;
+
+}
+
+#controls {
+	width:120px;
+	margin:0 auto;
+}
+
+button {
+	border-radius:3px;
+	font-size:20px;
+	font-family:'Black Han Sans', sans-serif;
+	margin-bottom:10px; 
+}
