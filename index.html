@@ -15,7 +15,9 @@
 		<!--bag image-->
 
 		<div id="bag" v-if="!ended"></div>
+
 		<div id="bag" v-bind:class="{burst:ended}" v-if="ended"></div>
+
 		<!--bag health-->
 
 		<div id="bag-health">
@@ -25,7 +27,7 @@
 		<!--game controls-->
 		
 		<div id="controls">
-			<center><button v-on:click="punch" v-show="!ended" class="punched">Punch</button></center>
+			<center><button v-on:click="punch" v-show="!ended" class="punched">Hit</button></center>
 			<center><button v-on:click="restart" class = "restart">Restart</button></center>
 			<center><button v-on:click="OnePunchMan" class="OnePunchMan">Saitama</button></center>
 		</div>

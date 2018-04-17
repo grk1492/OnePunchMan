@@ -19,7 +19,11 @@
 	}
 }
 
-
+#vue-app {
+	background:url(vue-punch/Onepunchman.jpg)center no-repeat;
+	border:15px solid red;
+	border-radius:15px;
+}
 
 
 #bag {
@@ -41,12 +45,6 @@
 #bag.burst {
 	background:url(bag-burst.png)center no-repeat;
 	background-size:80%;
-
-	-webkit-transform-origin:50% -40px;  
-	-moz-transform-origin:50% -40px;   
-	-webkit-animation: oscillation 1s ease-in-out infinite alternate;
-	-moz-animation: oscillation 1s ease-in-out infinite alternate;
-
 }
 
 
